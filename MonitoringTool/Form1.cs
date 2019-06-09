@@ -45,6 +45,7 @@ namespace MonitoringTool
                 this.Hide();
                 Form2 main = new Form2();
                 main.Show();
+                MessageBox.Show("Hello " + txtUsername.Text + ", welcome back!");
 
             }
             else

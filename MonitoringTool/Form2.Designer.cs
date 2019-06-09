@@ -44,6 +44,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -145,7 +146,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(152, 29);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(22, 23);
+            this.button2.Size = new System.Drawing.Size(22, 48);
             this.button2.TabIndex = 8;
             this.button2.Text = "?";
             this.button2.UseVisualStyleBackColor = true;
@@ -203,12 +204,23 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "label8";
             // 
-            // Form1
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(180, 54);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 14;
+            this.button3.Text = "LOG OUT";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(260, 253);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -222,7 +234,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Form2";
             this.ShowIcon = false;
             this.Text = "Monitoring Tool";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -248,6 +260,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button3;
     }
 }
 

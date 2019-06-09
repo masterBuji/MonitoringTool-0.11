@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
+using System.Data.SqlClient;
 namespace MonitoringTool
 {
     public partial class Form2 : Form
@@ -104,6 +105,13 @@ namespace MonitoringTool
                                                                                       label8.Text + "\r\n" + "\r\n" + label3.Text + "\r\n" + "\r\n" +
                                                                                       "DATE: " + DateTime.Now.ToString("dddd, dd MMMM yyyy HH:mm") + "\r\n" +
                                                                                       "- - - - - - - - - -" + "\r\n");
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 login = new Form1();
+            login.Show();
         }
     }
 }
